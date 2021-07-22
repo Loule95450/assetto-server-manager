@@ -24,7 +24,7 @@ ENV SERVER_MANAGER_DIR /home/${SERVER_USER}/server-manager/
 ENV SERVER_INSTALL_DIR ${SERVER_MANAGER_DIR}/assetto
 ENV LANG C.UTF-8
 
-ENV STEAMCMD_URL="http://media.steampowered.com/installer/steamcmd_linux.tar.gz"
+ENV STEAMCMD_URL="https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz"
 ENV STEAMROOT=/opt/steamcmd
 
 # steamcmd
