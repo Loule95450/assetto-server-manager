@@ -2,7 +2,6 @@ package servermanager
 
 import (
 	"errors"
-	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -67,10 +66,10 @@ func InstallAssettoCorsaServer(login, password string, force bool) error {
 	}
 
 	cmd := exec.Command(commandToUse,
-		"+@sSteamCmdForcePlatformType windows",
-		fmt.Sprintf("+login %s %s", login, password),
-		"+force_install_dir "+ServerInstallPath,
-		"+app_update "+assettoServerSteamID,
+		"+@sSteamCmdForcePlatformType", "windows",
+		"+login", login, password,
+		"+force_install_dir", ServerInstallPath,
+		"+app_update", assettoServerSteamID,
 		"+quit",
 	)
 
